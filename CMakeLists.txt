@@ -3,6 +3,8 @@ project(Learn_C C)
 
 set(CMAKE_C_STANDARD 11)
 
+add_compile_options(-Wall -Wextra -pedantic -Werror)
+
 add_executable(Learn_C hello_world.c
         tutorials.h
         variables.c
@@ -22,7 +24,6 @@ add_executable(Learn_C hello_world.c
         tests/linked_lists_test.c
         linked_lists.h
         bubble_sort.c
-        array.c
         array.h
         binary_search.c
         boolean.h
@@ -30,4 +31,5 @@ add_executable(Learn_C hello_world.c
         stack.c
         two_crystal_balls.c
         two_crystal_balls.c
-        arrayList.c)
+        arrayList.c
+        file_IO.c)

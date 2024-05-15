@@ -19,14 +19,15 @@
 // #define DYNAMIC_ALLOC
 // #define ARRAYS_AND_PTRS
 // #define RECURSION
+ #define FILE_IO
 // #define LINKED_LISTS
 // #define LINKED_LIST_TEST
 // #define BUBBLE_SORT
 // #define ARRAY_IMPLEMENTATION
 // #define BINARY_SEARCH
 // #define QUEUE
-//#define STACK
-//#define TWO_CRYSTAL_BALLS
-#define ARRAY_LIST
+// #define STACK
+// #define TWO_CRYSTAL_BALLS
+// #define ARRAY_LIST
 
 #endif //LEARN_C_TUTORIALS_H
