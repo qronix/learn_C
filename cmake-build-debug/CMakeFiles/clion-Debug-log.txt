@@ -1,4 +1,4 @@
-/home/xqqq/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=/bin/clang -G "CodeBlocks - Unix Makefiles" -S /home/xqqq/dev/C/learn_C -B /home/xqqq/dev/C/learn_C/cmake-build-debug
+C:\Users\wildfire\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" -S C:\Users\wildfire\dev\C\Learn_C -B C:\Users\wildfire\dev\C\Learn_C\cmake-build-debug
 CMake Deprecation Warning:
   Support for "Extra Generators" like
 
@@ -8,6 +8,12 @@ CMake Deprecation Warning:
   use the cmake-file-api(7) to view CMake-generated project build trees.
 
 
--- Configuring done (0.0s)
+-- The C compiler identification is GNU 13.1.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Users/wildfire/AppData/Local/Programs/CLion/bin/mingw/bin/gcc.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Configuring done (2.5s)
 -- Generating done (0.0s)
--- Build files have been written to: /home/xqqq/dev/C/learn_C/cmake-build-debug
+-- Build files have been written to: C:/Users/wildfire/dev/C/learn_C/cmake-build-debug

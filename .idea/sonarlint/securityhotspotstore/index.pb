@@ -2,7 +2,7 @@
 >
 CMakeLists.txt,9/a/9a2aa4db38d3115ed60da621e012c0efc0172aae
 ;
-tutorials.h,6/6/66ab8f7dc1e8e2b84cdf93e1e3d03f270451a009
+tutorials.h,6\6\66ab8f7dc1e8e2b84cdf93e1e3d03f270451a009
 ;
 variables.c,2/9/29e9d7c989b31728372cc63dbc88aa2a82a1178f
 8
@@ -58,4 +58,4 @@ C
 7
 array.h,a/8/a82871b46c989f4ff7a93b092ca134f46b97ecbc
 9
-	file_IO.c,9/2/926d4c56596df67c067e31a7d7d3d46801403b3e
+	file_IO.c,9\2\926d4c56596df67c067e31a7d7d3d46801403b3e
