@@ -32,4 +32,8 @@ add_executable(Learn_C hello_world.c
         two_crystal_balls.c
         two_crystal_balls.c
         arrayList.c
-        file_IO.c)
+        file_IO.c
+        typedef.c
+        pointers_two.c
+        manual_memory.c
+)

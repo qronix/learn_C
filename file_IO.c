@@ -95,10 +95,14 @@ int main(void) {
 
     fclose(fpWrite);
 
+    // Binary file operations
+    // File mode includes a 'b' to indicate binary operation
+    // Rare to see fprintf() and similar functions used with binary ops
+    // because binary mode deals with streams of bytes which can contain NUL characters
+    // and NUL usually indicates the end of a string. Instead, fread() and fwrite() are used
 
-    // Reading and writing binary files (raw bytes)
     FILE *fpByte;
-    unsigned char bytes[6] = {5, 37, 0, 255, 12};
+    unsigned char bytes[6] = {5, 37, 0, 88,255, 12};
     fpByte = fopen("output.bin", "wb"); // wb for write binary
     if(!fpByte){
         perror("Could not open file for binary write\n");
@@ -113,9 +117,24 @@ int main(void) {
     // * FILE*
 
     fwrite(bytes, sizeof(char), 6, fpByte);
-
     fclose(fpByte);
 
+    // Reading bytes one at a time
+    FILE *fpByteRead;
+    unsigned char myChar;
+
+    fpByteRead = fopen("output.bin", "rb");
+
+    if(!fpByteRead){
+        perror("Could not open file for binary read\n");
+        return 1;
+    }
+
+    while(fread(&myChar, sizeof(char), 1, fpByteRead) > 0){
+        printf("%d\n", myChar);
+    }
+
+    fclose(fpByteRead);
 
     return 0;
 }

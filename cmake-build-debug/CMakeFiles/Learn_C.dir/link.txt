@@ -1,3 +1,0 @@
-C:\Users\wildfire\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -E rm -f CMakeFiles\Learn_C.dir/objects.a
-C:\Users\wildfire\AppData\Local\Programs\CLion\bin\mingw\bin\ar.exe qc CMakeFiles\Learn_C.dir/objects.a @CMakeFiles\Learn_C.dir\objects1.rsp
-C:\Users\wildfire\AppData\Local\Programs\CLion\bin\mingw\bin\gcc.exe -g -Wl,--whole-archive CMakeFiles\Learn_C.dir/objects.a -Wl,--no-whole-archive -o Learn_C.exe -Wl,--out-implib,libLearn_C.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Learn_C.dir\linkLibs.rsp

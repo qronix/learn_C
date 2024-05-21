@@ -19,7 +19,10 @@
 // #define DYNAMIC_ALLOC
 // #define ARRAYS_AND_PTRS
 // #define RECURSION
- #define FILE_IO
+// #define FILE_IO
+//#define TYPEDEF_TUT
+//#define
+#define MANUAL_MEMORY
 // #define LINKED_LISTS
 // #define LINKED_LIST_TEST
 // #define BUBBLE_SORT

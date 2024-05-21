@@ -1,3 +1,0 @@
-C:/Users/wildfire/dev/C/learn_C/cmake-build-debug/CMakeFiles/Learn_C.dir
-C:/Users/wildfire/dev/C/learn_C/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/wildfire/dev/C/learn_C/cmake-build-debug/CMakeFiles/rebuild_cache.dir
