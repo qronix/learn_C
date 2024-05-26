@@ -22,7 +22,9 @@
 // #define FILE_IO
 //#define TYPEDEF_TUT
 //#define
-#define MANUAL_MEMORY
+//#define MANUAL_MEMORY
+//#define MEMORY_REALLOCATION
+#define MEMORY_ARBITRARY_LENGTH
 // #define LINKED_LISTS
 // #define LINKED_LIST_TEST
 // #define BUBBLE_SORT

@@ -35,5 +35,7 @@ add_executable(Learn_C hello_world.c
         file_IO.c
         typedef.c
         pointers_two.c
-        manual_memory.c
+        chap_12_memory/manual_memory.c
+        chap_12_memory/memory_reallocation.c
+        chap_12_memory/reading_lines_of_arbitrary_length.c
 )
