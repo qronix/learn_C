@@ -67,6 +67,36 @@ int main(void){
     printf("%lu\n", x); //3490
 
 
+    // What's with the NULL in strtoul? It's a pointer to a pointer
+    // to a char!!! OOOOOOOOOOOOO be scared!!
+
+    char *badIntString = "34x90"; // 'x' is not a valid digit in base 10
+    char *badchar;
+
+    // Convert string s, a number in base 10, to an unsigned long int
+    unsigned long int myNumber = strtoul(badIntString, &badchar, 10);
+
+    // strtoul attempts to convert as much as possible:
+    printf("%lu\n", myNumber); // 34
+
+    // Now we can see the bad character, because badchar points to it!
+    printf("Invalid character: %c\n", *badchar); // 'x'
+
+    // if nothing went wrong with strtoul() (and friends), then NULL
+    // will return NUL (notice this is the sentinel character and not NULL
+
+    char *nonBadIntString = "69420";
+    char *badcharTwo;
+
+    unsigned long int myOtherNumber = strtoul(nonBadIntString, &badcharTwo, 10);
+
+    if(*badcharTwo == '\0'){
+        printf("%lu, Hey! It worked!\n", myOtherNumber);
+    }else{
+        printf("Unable to convert character: %c to unsigned long int\n", *badcharTwo);
+    }
+
+
     return 0;
 }
 #endif

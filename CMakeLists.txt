@@ -39,4 +39,5 @@ add_executable(Learn_C hello_world.c
         chap_12_memory/memory_reallocation.c
         chap_12_memory/reading_lines_of_arbitrary_length.c
         chap_15_conversions/string_conversions.c
+        chap_16_qualifiers_and_specifiers/quals_and_specs.c
 )
