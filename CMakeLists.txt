@@ -40,4 +40,26 @@ add_executable(Learn_C hello_world.c
         chap_12_memory/reading_lines_of_arbitrary_length.c
         chap_15_conversions/string_conversions.c
         chap_16_qualifiers_and_specifiers/quals_and_specs.c
+        chap_16_qualifiers_and_specifiers/restrict.c
+        chap_16_qualifiers_and_specifiers/static.c
+        chap_18_outside_env/exit_statuses.c
+        chap_18_outside_env/env_vars.c
+        chap_18_outside_env/env_vars_list.c
+        chap_19_preprocessor/built_in_macros.c
+        chap_19_preprocessor/macros_with_arguments.c
+        chap_19_preprocessor/variadic_macros.c
+        chap_19_preprocessor/assert_macro.c
+        chap_20_structs_part_two/nested_structs.c
+        chap_20_structs_part_two/anonymous_structs.c
+        chap_20_structs_part_two/self_ref_structs.c
+        chap_20_structs_part_two/flexible_array_members.c
+        chap_20_structs_part_two/fake_oop.c
+        chap_20_structs_part_two/bit_fields.c
+        chap_20_structs_part_two/unions.c
+        chap_21_characters_and_strings_II/escape_sequences.c
+        chap_23_advanced_pointers/advanced_pointers.c
+        chap_23_advanced_pointers/multi_byte_values.c
+        chap_23_advanced_pointers/function_pointers.c
 )
+
+target_link_libraries(Learn_C m)

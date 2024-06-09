@@ -49,6 +49,43 @@ int main(void){
     // s++; // WRONG!! It is const (*const s)
     // (*s)++; // ALSO WRONG!! It is const (const int)
 
+    /*
+     * Finally, if you have multiple levels of indirection, you should const the appropriate levels. Just because a
+        pointer is const, doesn’t mean the pointer it points to must also be. You can explicitly set them like in the
+        following examples:
+     * */
+
+    char **t;
+    t++;  // Ok - t is not const
+    (*t)++; // Ok - t value is not const
+
+    char **const u;
+    u++; // Error - Pointer is const
+    (*u)++; // Ok - value is not const
+
+    char *const *v;
+    v++; // Ok - The first level pointer is const, however the second level is not
+    (*v)++; // Error - Dereferencing the second level, points to the first level which is const
+
+    char *const *const w;
+    w++; // Error - First level pointer is const
+    (*w)++; // Error - Second level pointer is const
+
+
+
+    // Compiler warning about "initialization discards 'const' qualifier from pointer type target
+    const int z=20;
+    int *a = &z;
+
+    // This means that our pointer is not const (the lvalue) but the rvalue is const and the compiler
+    // is discarding the "const-ness" of the rvalue
+    // Therefore, we can try to do something like:
+    *a = 40; // Undefined behavior - but this is wrong, because we don't know what will happen
+
+    printf("%d\n", z); // Maybe 40, maybe soup?
+
+
+
     return 0;
 }
 
